@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/list.css">
+    <link rel="icon" href="img/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+    <script src="js/carousel.js"></script>
+    <title>list</title>
+</head>
+<body>
+  <!-- headerTop -->
+<a href="#" class="header-top"></a>
+<!-- 顶部导航 -->
+<div class="header-nav">
+    <div class="w">
+        <div class="header-nav-l">
+            <li class="item">
+                <a href="javascript:;"> 
+                    <span class="ico header-nav-01"></span>收藏鲜花（hua.com）
+                </a>
+            </li>
+            <li class="item item-list">
+                <a href="javascript:;">
+                    <span class="ico header-nav-02"></span>关注微信
+                </a>
+                <div class="list menu">
+                    <img src="img/h-02.jpg"/>
+                    <p>扫码关注</p>
+                    <p>回复"礼物"更多惊喜！</p>
+                </div>
+            </li>
+            <li class="item item-list">
+                <a href="javascript:;">
+                    <span class="ico header-nav-03"></span>花礼网APP
+                </a>
+                <div class="list menu">
+                    <img src="img/h-02.jpg"/>
+                    <p>新人专享100元Ap礼包</p> 
+                </div>
+            </li>
+        </div>
+        <div class="header-nav-r">
+            <li class="item login">
+                <a href="javascript:;">你好，请登录  </a>
+                <a href="javascript:;">  注册</a>
+            </li>
+            <li class="item nav-pipe">|</li>
+            <li class="item"><a href="javascript:;">订单查询</a></li>
+            <li class="item nav-pipe">|</li>
+            <li class="item"><a href="javascript:;">我的花礼</a></li>
+            <li class="item nav-pipe">|</li>
+            <li class="item service_item">
+                <a href="javascript:;">客户服务<span class="header-nav-04"><i class="iconfont icon-jiantouxiangxia"></i></span></a>
+                <div class="service">
+                    <a href="javascript:;">在线付款</a>      
+                    <a href="javascript:;">帮助中心</a>      
+                    <a href="javascript:;">售后服务</a>      
+                    <a href="javascript:;">配送范围</a>      
+                    <a href="javascript:;">意见反馈</a>      
+                </div>
+            </li>
+            <li class="item nav-pipe">|</li>
+            <li class="item dropcart_item">
+                    <a href="javascript:;"><span class="ico header-nav-05"></span>购物车<span>(0)</span><span class="header-nav-04"><i class="iconfont icon-jiantouxiangxia"></i></span></a>
+                    <div class="dropcart">                            
+                        <p>还没相中喜欢的，赶紧再去瞅瞅吧~</p>
+                    </div>
+             </li>
+            <li class="item nav-pipe">|</li>                
+            <li class="item slogan">中国鲜花礼品网：中国鲜花网领先品牌</li>
+        </div>  
+    </div>
+</div>
+<!-- header -->
+<div class="head">
+    <div class="header-left">
+        <img src="img/header-logo.jpg">
+    </div>
+    <div class="header-center">
+        <input type="text" placeholder="商品关键词" id="txt" class="txt"/><input id="btn" type="button" value="搜索" class="btn" />
+        <ul>
+            <li><a href="#">红玫瑰</a></li>
+            <img src="img/header-bg.jpg" />
+            <li><a href="#">永生花</a></li>
+            <img src="img/header-bg.jpg" />
+            <li><a href="#">生日鲜花</a></li>
+            <img src="img/header-bg.jpg" />
+            <li><a href="#">礼品卡</a></li>
+        </ul>
+    </div>
+    <div class="header-right">
+        <a href="#"><span class="ico header-r-01"></span></a>
+        <p>400-889-8188</p>
+        <img src="img/header-bg.jpg">
+        <span class="ico header-r-02"></span>
+        <a href="#">在线客服</a>
+    </div>
+</div>  
+<!-- nav导航开始 -->
+<div class="nav-t">
+    <div class="w">
+        <!-- nav的左半部分 -->
+        <div class="nav-t-l">
+            <h4 class="categrory-title">全部商品导购</h4>
+            <!-- 导航下拉列表 -->
+            <div class="dropdown-list">
+                <h4>鲜花用途</h4>
+                <ul class="dropdown-list-ul">
+                    <li><a href="#">爱情鲜花</a></li>
+                    <li><a href="#">友情鲜花</a></li>
+                    <li><a href="#">生日鲜花</a></li>
+                    <li><a href="#">问候长辈</a></li>
+                    <li><a href="#">探病慰问</a></li>
+                    <li><a href="#">道歉鲜花</a></li>
+                    <li><a href="#">祝贺鲜花</a></li>
+                    <li><a href="#">婚庆鲜花</a></li>
+                    <li><a href="#">商务鲜花</a></li>
+                </ul>
+                <h4>永生花</h4>
+                <ul class="dropdown-list-ul">
+                    <li><a href="#">经典花盒</a></li>
+                    <li><a href="#">巨型玫瑰</a></li>
+                    <li><a href="#">薰衣草</a></li>
+                    <li><a href="#">永生花瓶</a></li>
+                    <li><a href="#">特色永生花</a></li>
+                </ul>
+                <h4>蛋糕</h4>
+                <ul class="dropdown-list-ul">
+                    <li><a href="#">元祖</a></li>
+                    <li><a href="#">INCAKE</a></li>
+                    <li><a href="#">幸福西饼</a></li>
+                    <li><a href="#">诺心</a></li>
+                    <li><a href="#">窝夫小子</a></li>
+                    <li><a href="#">Mcake</a></li>
+                    <li><a href="#">米卡米卡</a></li>
+                    <li><a href="#">Vcake</a></li>
+                    <li><a href="#">一品轩</a></li>
+                    <li><a href="#">美滋美客</a></li>
+                    <li><a href="#">贝思客</a></li>
+                    <li><a href="#">BONCAKE</a></li>
+                    <li><a href="#">法西妮蛋糕</a></li>
+                    <li><a href="#">心之和蛋糕</a></li>
+                    <li><a href="#">全国品牌</a></li>
+                </ul>
+                <h4>礼品</h4>
+                <ul class="dropdown-list-ul">
+                    <li><a href="#">泰国保鲜花</a></li>
+                    <li><a href="#">音乐盒</a></li>
+                    <li><a href="#">水晶内雕</a></li>
+                    <li><a href="#">金箔花</a></li>
+                    <li><a href="#">化妆镜</a></li>
+                    <li><a href="#">香薰系列</a></li>
+                    <li><a href="#">音乐睡枕</a></li>
+                    <li><a href="#">花瓶/相框</a></li>
+                    <li><a href="#">卡通花束</a></li>
+                    <li><a href="#">品牌公仔</a></li>
+                    <li><a href="#">首饰</a></li>
+                    <li><a href="#">进口巧克力</a></li>
+                    <li><a href="#">手工巧克力</a></li>
+                    <li><a href="#">巧寇巧克力</a></li>
+                    <li><a href="#">瑞士莲巧克力</a></li>
+                    <li><a href="#">Gifttalk精选</a></li>
+                    <li><a href="#">创意礼品</a></li>
+                    <li><a href="#">礼品卡</a></li>
+                    <li><a href="#">多肉植物盆栽</a></li>
+                </ul>
+                <h4>绿植</h4>
+                <ul class="dropdown-list-ul">
+                    <li><a href="#">绿色植物</a></li>
+                    <li><a href="#">盆栽花卉</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 导航右半边的东西 -->
+        <div class="nav-t-r">
+            <li><a href="#">鲜花</a></li>
+            <li><a href="#">永生花</a></li>
+            <li><a href="#">蛋糕</a></li>
+            <li><a href="#">礼品</a></li>`    
+            <li><a href="#">巧克力</a></li>
+            <li><a href="#">花语大全</a></li>
+            <li><a href="tuandui.html">企业团购</a></li>
+            <li><a href="jiaoshijie.html" style="color:#ff6a00">教师节鲜花</a></li>
+        </div>    
+    </div>
+</div> 
+
+
+<!-- 主体内容 -->
+<div class="main_body">
+    <div class="container">
+
+        <div class="pull_left">
+            <!-- 各种分类 -->
+            <div class="navigation">
+                <!-- 用途 -->
+                <div class="items">
+                    <div class="items_title">
+                        <span class="icon_flower flower1"></span>
+                        <h4>用途</h4>
+                    </div>
+                    <ul class="items_list">
+                        <li><a href="javascript:;">爱情鲜花</a></li>
+                        <li><a href="javascript:;">友情鲜花</a></li>
+                        <li><a href="javascript:;">生日鲜花</a></li>
+                        <li><a href="javascript:;">问候长辈</a></li>
+                        <li><a href="javascript:;">回报老师</a></li>
+                        <li><a href="javascript:;">探病慰问</a></li>
+                        <li><a href="javascript:;">道歉鲜花</a></li>
+                        <li><a href="javascript:;">婚庆鲜花</a></li>
+                        <li><a href="javascript:;">祝贺鲜花</a></li>
+                        <li><a href="javascript:;">哀思鲜花</a></li>
+                        <li><a href="javascript:;">商务鲜花</a></li>
+                        <li><a href="javascript:;">开业鲜花</a></li>
+                        <li><a href="javascript:;">自选鲜花</a></li>
+                        <li class="items_list_last"><a href="javascript:;">港澳台送花</a></li>
+                    </ul>
+                </div>
+                    <!-- 花材 -->                
+                <div class="items">
+                    <div class="items_title">
+                        <span class="icon_flower flower2"></span>
+                        <h4>花材</h4>
+                    </div>
+                    <ul class="items_list">
+                        <li><a href="javascript:;">玫瑰</a></li>
+                        <li><a href="javascript:;">红玫瑰</a></li>
+                        <li><a href="javascript:;">粉玫瑰</a></li>
+                        <li><a href="javascript:;">白玫瑰</a></li>
+                        <li><a href="javascript:;">紫玫瑰</a></li>
+                        <li><a href="javascript:;">蓝玫瑰</a></li>
+                        <li><a href="javascript:;">香槟玫瑰</a></li>
+                        <li><a href="javascript:;">黄玫瑰</a></li>
+                        <li><a href="javascript:;">康乃馨</a></li>
+                        <li><a href="javascript:;">百合</a></li>
+                        <li><a href="javascript:;">扶郎</a></li>
+                        <li><a href="javascript:;">向日葵</a></li>
+                        <li><a href="javascript:;">郁金香</a></li>
+                        <li><a href="javascript:;">马蹄莲</a></li>
+                    </ul>
+                </div>
+                <!-- 颜色 -->                    
+                <div class="items">
+                    <div class="items_title">
+                        <span class="icon_flower flower3"></span>
+                        <h4>颜色</h4>
+                    </div>
+                    <ul class="items_list">
+                        <li><a href="javascript:;">红色</a></li>
+                        <li><a href="javascript:;">粉色</a></li>
+                        <li><a href="javascript:;">香槟</a></li>
+                        <li><a href="javascript:;">黄色</a></li>
+                        <li><a href="javascript:;">白色</a></li>
+                        <li><a href="javascript:;">紫色</a></li>
+                        <li><a href="javascript:;">蓝色</a></li>
+                    </ul>
+                </div> 
+                <!-- 类别 -->                    
+                <div class="items">
+                    <div class="items_title">
+                        <span class="icon_flower flower4"></span>
+                        <h4>类别</h4>
+                    </div>
+                    <ul class="items_list">
+                        <li><a href="javascript:;">花束</a></li>
+                        <li><a href="javascript:;">花盒</a></li>
+                        <li><a href="javascript:;">瓶花</a></li>
+                        <li><a href="javascript:;">精品鲜花</a></li>
+                        <li><a href="javascript:;">果篮</a></li>
+                        <li><a href="javascript:;">桌面鲜花</a></li>
+                        <li><a href="javascript:;">开业花篮</a></li>
+                    </ul>
+                </div>                   
+                <!-- 价格 -->                   
+                <div class="items">
+                    <div class="items_title">
+                        <span class="icon_flower flower5"></span>
+                        <h4>价格</h4>
+                    </div>
+                    <ul class="items_list">
+                        <li><a href="javascript:;">特价鲜花</a></li>
+                        <li><a href="javascript:;">150元以下</a></li>
+                        <li class="price"><a href="javascript:;">150-250元</a></li>
+                        <li class="price"><a href="javascript:;">250-350元</a></li>
+                        <li class="price"><a href="javascript:;">350-550元</a></li>
+                        <li class="price"><a href="javascript:;">550-800元</a></li>
+                        <li class="price"><a href="javascript:;">800元以上</a></li>
+                    </ul>
+                </div> 
+                <!-- 枝数 -->                   
+                <div class="items branch">
+                    <div class="items_title">
+                        <span class="icon_flower flower6"></span>
+                        <h4>枝数</h4>
+                    </div>
+                    <ul class="items_list">
+                        <li><a href="javascript:;">9枝</a></li>
+                        <li><a href="javascript:;">10枝</a></li>
+                        <li><a href="javascript:;">11枝</a></li>
+                        <li><a href="javascript:;">12枝</a></li>
+                        <li><a href="javascript:;">16枝</a></li>
+                        <li><a href="javascript:;">18枝</a></li>
+                        <li><a href="javascript:;">19枝</a></li>
+                        <li><a href="javascript:;">20枝</a></li>
+                        <li><a href="javascript:;">22枝</a></li>
+                        <li><a href="javascript:;">29枝</a></li>
+                        <li><a href="javascript:;">33枝</a></li>
+                        <li><a href="javascript:;">36枝</a></li>
+                        <li><a href="javascript:;">50枝</a></li>
+                        <li><a href="javascript:;">66枝</a></li>
+                        <li class="items_list_last"><a href="javascript:;">99枝以上</a></li>
+                    </ul>
+                </div>
+            </div> 
+
+            <!-- 热销鲜花推荐 -->
+            <div class="panel hot_sale">
+                <div class="panel-heading">
+                    <h3>热销鲜花推荐</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/d_01.jpg" /></a>
+                        <p>鲜花/不变的心-戴安娜玫瑰66枝</p>
+                        <span class="iconfont icon-newbimoney">439</span>
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/d_02.jpg" /></a>
+                        <p>鲜花/不变的心-戴安娜玫瑰66枝</p>
+                        <span class="iconfont icon-newbimoney">439</span>
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/d_03.jpg" /></a>
+                        <p>鲜花/不变的心-戴安娜玫瑰66枝</p>
+                        <span class="iconfont icon-newbimoney">439</span>
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/d_04.jpg" /></a>
+                        <p>鲜花/不变的心-戴安娜玫瑰66枝</p>
+                        <span class="iconfont icon-newbimoney">439</span>
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/d_05.jpg" /></a>
+                        <p>鲜花/不变的心-戴安娜玫瑰66枝</p>
+                        <span class="iconfont icon-newbimoney">439</span>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+
+            <!-- 最新鲜花订单评价 -->
+            <div class="panel latele_order">
+                <div class="panel-heading">
+                    <h3>最新鲜花订单评价</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/e_01.jpg" /></a>
+                        <div class="com-cont">
+                            <h5>会员号：3658643*</h5>
+                            <p>非常喜欢，收到的人非常开心</p>
+                        </div>                            
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/e_02.jpg" /></a>
+                        <div class="com-cont">
+                            <h5>会员号：3658643*</h5>
+                            <p>非常喜欢，收到的人非常开心</p>
+                        </div>                            
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/e_03.jpg" /></a>
+                        <div class="com-cont">
+                            <h5>会员号：3658643*</h5>
+                            <p>非常喜欢，收到的人非常开心</p>
+                        </div>                            
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/e_04.jpg" /></a>
+                        <div class="com-cont">
+                            <h5>会员号：3658643*</h5>
+                            <p>非常喜欢，收到的人非常开心</p>
+                        </div>                            
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/e_05.jpg" /></a>
+                        <div class="com-cont">
+                            <h5>会员号：3658643*</h5>
+                            <p>非常喜欢，收到的人非常开心</p>
+                        </div>                            
+                    </div>
+                    <div class="side-items">
+                        <a href="javascript:;"><img src="img/e_06.jpg" /></a>
+                        <div class="com-cont">
+                            <h5>会员号：3658643*</h5>
+                            <p>非常喜欢，收到的人非常开心</p>
+                        </div>                            
+                    </div>
+                    
+                    
+
+
+
+                </div>
+                    
+            </div>
+        </div>
+
+        <div class="pull_right">
+            <!-- 轮播图 -->
+            <div class="carousel">
+                <div class="carousel-img">
+                    <div class="carousel-pic pic1"><a href="javascript:;"></a></div>
+                    <div class="carousel-pic pic2"><a href="javascript:;"></a></div>
+                    <div class="carousel-pic pic3"><a href="javascript:;"></a></div>
+                </div>
+                <div class="carousel-direction">
+                    <a href="javascript:;" class="carousel-direction-prev"><i class="iconfont icon-jiantou"></i></a>
+                    <a href="javascript:;" class="carousel-direction-next"><i class="iconfont icon-jiantou1"></i></a>
+                </div>
+            </div>
+            <!-- 筛选 -->
+            <div class="fileterbar">
+                <ul class="filter-items">
+                    <li class="active"><a href="javascript:;">综合</a></li>
+                    <li><a href="javascript:;">销量</a><i class="iconfont icon-jiantouarrow486"></i></li>
+                    <li><a href="javascript:;">价格</a><i class="iconfont icon-jiantouarrow486"></i></li>
+                    <li><a href="javascript:;">最新</a><i class="iconfont icon-jiantouarrow486"></i></li>
+                </ul>
+                <ul class="pager">
+                    <li class="totalpage"><b>1</b>/9</li>
+                    <li class="direction"><span class="icon-directionl"><</span></li>
+                    <li class="direction"><span class="icon-direction">></span></li>
+                </ul>
+            </div>
+            <!-- 商品列表 -->
+            <div class="gridwrapper">
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_01.jpg" /></a> 
+                        <span class="icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_02.jpg" /></a> 
+                        <span class="icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_03.jpg" /></a> 
+                        <span class="icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_04.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_05.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_06.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_07.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_08.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_09.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_10.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_11.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_12.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_13.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_14.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_15.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_16.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_17.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_18.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_19.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_20.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_21.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_22.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_23.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_24.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_25.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_26.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_27.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="gird-panel">
+                        <a href="javascript:;"><img class="goods_pic" src="img/f_28.jpg" /></a> 
+                        <span class="iconfont icon-newbimoney">￥439</span>
+                        <a class="title" href="">鲜花/多彩的季节-三色玫瑰共50枝</a>
+                        <div class="operate">
+                            <a href="javascript:;"><span class="icon_heart"></span>收藏</a>
+                            <a class="active" href="javascript:;"><span class="icon_cart"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </div>
+                    
+
+    
+
+
+
+
+
+            </div>
+            <!-- 分页 -->
+            <div class="pagewrapper">
+                <p class="total-page">1-9 / 共245件商品</p>
+                <ul class="pagination">
+                    <li><a href="javascript:;"><span class="iconfont icon-directionl"></span>上一页</a></li>
+                    <li class="active"><a href="javascript:;">1</a></li>
+                    <li><a href="javascript:;">2</a></li>
+                    <li><a href="javascript:;">3</a></li>
+                    <li><a href="javascript:;">4</a></li>
+                    <li><a href="javascript:;">5</a></li>
+                    <li><a href="javascript:;">6</a></li>
+                    <li><a href="javascript:;">7</a></li>
+                    <li><a href="javascript:;">8</a></li>
+                    <li><a href="javascript:;">9</a></li>
+                    <li><a href="javascript:;"><span class="iconfont icon-direction"></span>下一页</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<!--鲜花常识&鲜花礼仪  -->
+<div class="w">
+    <div class="info">
+        <div class="title">
+            <h3>鲜花礼仪和鲜花常识</h3>
+        </div>
+        <div class="body">
+
+            <ul class="item">
+                <li><a href="javascript:;">为什么要选择鲜花速递</a></li>
+                <li><a href="javascript:;">选择鲜花速递需要注意什么？</a></li>
+                <li><a href="javascript:;">送花枝数代表的含义</a></li>
+                <li><a href="javascript:;">各种花代表的不同含义</a></li>
+                <li><a href="javascript:;">玫瑰概述及花语</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="javascript:;">为什么要选择鲜花速递</a></li>
+                <li><a href="javascript:;">选择鲜花速递需要注意什么？</a></li>
+                <li><a href="javascript:;">送花枝数代表的含义</a></li>
+                <li><a href="javascript:;">各种花代表的不同含义</a></li>
+                <li><a href="javascript:;">玫瑰概述及花语</a></li>
+            </ul>
+            <ul class="last_ul">
+                <li><a href="javascript:;">为什么要选择鲜花速递</a></li>
+                <li><a href="javascript:;">选择鲜花速递需要注意什么？</a></li>
+                <li><a href="javascript:;">送花枝数代表的含义</a></li>
+                <li><a href="javascript:;">各种花代表的不同含义</a></li>
+                <li><a href="javascript:;">玫瑰概述及花语</a></li>
+            </ul>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<!-- 尾部上 -->
+<div class="footer-t">
+    <li><a href="#">首页</a></li>
+    <li>|</li>
+    <li><a href="#">关于我们</a></li>
+    <li>|</li>
+    <li><a href="#">媒体报道</a></li>
+    <li>|</li>
+    <li><a href="#">联系方式</a></li>
+    <li>|</li>
+    <li><a href="#">企业团购</a></li>
+    <li>|</li>
+    <li><a href="#">友情链接</a></li>
+    <li>|</li>
+    <li><a href="#">在线补数</a></li>
+    <li>|</li>
+    <li><a href="#">为什么选择中国鲜花网</a></li>
+</div>
+<div class="footer-b">
+        <a href="#"><img src="img/1.png"></a>
+        <a href="#"><img src="img/2.gif"></a>
+        <a href="#"><img src="img/3.gif"></a>
+        <a href="#"><img src="img/4.png"></a>
+        <a href="#"><img src="img/5.gif"></a>
+        <a href="#"><img src="img/6.jpg"></a>
+        <a href="#"><img src="img/7.jpg"></a>
+        <a href="#"><img src="img/8.jpg"></a>
+        <a href="#"><img src="img/9.jpg"></a>
+</div>
+<div class="footer-bt">
+    <a class="member" href="javascript:;">中国花卉协会会员</a>
+    <a class="member" href="javascript:;">中国电子商务协会会员</a>
+    <a class="member" href="javascript:;">ICP经营许可证：</a>
+    <a class="member" href="javascript:;">粤B2-20050744</a>
+    <b>|</b>
+    <span> 粤公网安备44030502000373号 Copyright &copy; 2005-2017</span>
+</div>
+<div class="footer-bt">
+    <a class="member" href="javascript:;">www.hua.com</a>
+    <span>深圳市百易信息技术有限公司</span>
+</div>
+<div class="link">
+    <a href="#"><b>友链</b></a>
+    <a href="#">中华取名</a>
+    <a href="#">深圳房产网</a>
+    <a href="#">卷皮网</a>
+    <a href="#">腕表网</a>
+    <a href="#">宝贝婚团网</a>
+    <a href="#">苗木</a>
+    <a href="#">卡座一珠宝网</a>
+    <a href="#">钻石婚戒定制</a>
+    <a href="#">杂志</a>
+    <a href="#">中国青少年艺术教育网</a>
+    <a href="#">装修网</a>
+    <a href="#">淘狗网</a>
+    <a href="#">礼无忧网</a>
+    <a href="#">宠物狗</a>
+    <a href="#">基友网</a>
+    <a href="#">礼物网</a>
+    <a href="#">装修</a>
+    <a href="#">新三板</a>
+    <a href="#">商标注册</a>
+    <a href="#">眼镜店</a>
+
+</div>
+</body>
+</html>
+<script src="js/list.js"></script>
+    

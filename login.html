@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <title>login</title>
+</head>
+<body>
+ <!-- headerTop -->
+<a href="#" class="header-top"></a>
+<!-- 顶部导航  -->
+<div class="header-nav">
+    <div class="w">
+        
+        <div class="header-nav-l">
+            <li class="item">
+                <a href="javascript:;"> 
+                    <span class="ico header-nav-01"></span>收藏鲜花（hua.com）
+                </a>
+            </li>
+            <li class="item item-list">
+                <a href="javascript:;">
+                    <span class="ico header-nav-02"></span>关注微信
+                </a>
+                <div class="list menu">
+                    <img src="img/h-02.jpg"/>
+                    <p>扫码关注</p>
+                    <p>回复"礼物"更多惊喜！</p>
+                </div>
+            </li>
+            <li class="item item-list">
+                <a href="javascript:;">
+                    <span class="ico header-nav-03"></span>花礼网APP
+                </a>
+                <div class="list menu">
+                    <img src="img/h-02.jpg"/>
+                    <p>新人专享100元Ap礼包</p> 
+                </div>
+            </li>
+        </div>
+        <div class="header-nav-r">
+            <li class="item login">
+                <a href="javascript:;">你好，请登录  </a>
+                <a href="javascript:;">  注册</a>
+            </li>
+            <li class="item nav-pipe">|</li>
+            <li class="item"><a href="javascript:;">订单查询</a></li>
+            <li class="item nav-pipe">|</li>
+            <li class="item"><a href="javascript:;">我的花礼</a></li>
+            <li class="item nav-pipe">|</li>
+            <li class="item service_item">
+                <a href="javascript:;">客户服务<span class="header-nav-04"></span></a>
+                <div class="service">
+                    <a href="javascript:;">在线付款</a>      
+                    <a href="javascript:;">帮助中心</a>      
+                    <a href="javascript:;">售后服务</a>      
+                    <a href="javascript:;">配送范围</a>      
+                    <a href="javascript:;">意见反馈</a>      
+                </div>
+            </li>
+            <li class="item nav-pipe">|</li>
+            <li class="item dropcart_item">
+                    <a href="javascript:;"><span class="ico header-nav-05"></span>购物车<span>(0)</span><span class="header-nav-04"></span></a>
+                    <div class="dropcart">                            
+                        <p>还没相中喜欢的，赶紧再去瞅瞅吧~</p>
+                    </div>
+             </li>
+            <li class="item nav-pipe">|</li>                
+            <li class="item slogan">中国鲜花礼品网：中国鲜花网领先品牌</li>
+        </div>  
+    </div>
+</div>
+<!-- header -->
+<header>
+    <div class="header-left">
+        <img src="img/header-logo.jpg">
+    </div>
+    <div class="header-center">
+        <input type="text" placeholder="商品关键词" id="txt" class="txt"/><input id="btn" type="button" value="搜索" class="btn" />
+        <ul>
+            <li><a href="#">红玫瑰</a></li>
+            <img src="img/header-bg.jpg" />
+            <li><a href="#">永生花</a></li>
+            <img src="img/header-bg.jpg" />
+            <li><a href="#">生日鲜花</a></li>
+            <img src="img/header-bg.jpg" />
+            <li><a href="#">礼品卡</a></li>
+        </ul>
+    </div>
+    <div class="header-right">
+        <a href="#"><span class="ico header-r-01"></span></a>
+        <p>400-889-8188</p>
+        <img src="img/header-bg.jpg">
+        <span class="ico header-r-02"></span>
+        <a href="#">在线客服</a>
+    </div>
+</header> 
+<!-- content -->
+<div class="content">
+    <div class="login-cont">
+        <div class="box">
+<!--登录注册-->
+            <p class="choose">
+                <span id="loginbtn" class="loginbtn active"><a href="#">登录</a></span>
+                <span id="regbtn" class="regbtn"><a href="#">注册</a></span>
+            </p>
+<!--验证码-->
+            <p id="yanzhengma" > 
+                <a href="#" >使用手机验证码登录</a>
+            </p>
+            
+            <div class="login-method" id="login-method">
+<!--用户名-->
+                <form action="loginCheck.php" method="post">
+                    <p class="username">
+                        <span class="xbt user"></span>
+                        <input type="text"  class="name" id="username" name="username" placeholder="手机号码"/>
+                    </p>
+    <!--密码-->
+                    <p class="password">
+                        <span  class="xbt pass"></span>
+                        <input type="password" id="userpass" class="word" name="userpass" placeholder="用户密码" />
+                    </p>			
+    <!--忘记密码-->
+                <p id="forgot"> 
+
+                    <a href="#">忘记密码?</a>
+                </p>
+    <!--提交-->
+                <p class="subs">
+                    <input type="submit" value="登录" id="submits"/>
+                </p>
+    <!--其他登录方式-->
+              
+                </form>
+            
+            </div>
+ 
+            
+
+
+            
+    <!--注册-->
+            
+            
+            <div id="reg-method">
+
+                <form action="regSave.php" method="post">
+                <!--email-->
+                        <p class="email-user">
+                            <input type="text" name="username" id="email-users" placeholder="请填写你的手机号码" />
+                        </p>
+                <!--设置密码-->
+                        <p class="pass-user">
+                            <input type="text" name="userpass" id="pass-users" placeholder="密码" />
+                        </p>
+                <!--确认密码-->
+                        <p class="pass-A-user">
+                            <input type="password" id="pass-A-users" placeholder="再次输入密码" />
+                        </p>
+                <!--验证码-->
+                        <p class="yzm">
+                            <input type="text" id="yzm" placeholder="验证码" />
+                            <span id="fourNum">2017</span>
+                            <span id="show-yzms"><a href="#">看不清，再换一张</a>
+                        </p>
+                <!--提交-->
+                        <p class="subs">
+                            <input type="submit" value="登录" id="submits"/>
+                        </p>
+                
+                </form>
+            
+            </div>    
+    <!--其他登录方式-->
+        
+        
+        
+        
+            <li><a href="#">微信</a><b>|</b><a href="#">QQ</a><b>|</b><a href="#">支付宝</a></li>
+            <div class="change2">
+        
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- 尾部上 -->
+<div class="footer-t">
+    <li><a href="#">首页</a></li>
+    <li>|</li>
+    <li><a href="#">关于我们</a></li>
+    <li>|</li>
+    <li><a href="#">媒体报道</a></li>
+    <li>|</li>
+    <li><a href="#">联系方式</a></li>
+    <li>|</li>
+    <li><a href="#">企业团购</a></li>
+    <li>|</li>
+    <li><a href="#">友情链接</a></li>
+    <li>|</li>
+    <li><a href="#">在线补数</a></li>
+    <li>|</li>
+    <li><a href="#">为什么选择中国鲜花网</a></li>
+</div>
+<div class="footer-b">
+        <a href="#"><img src="img/1.png"></a>
+        <a href="#"><img src="img/2.gif"></a>
+        <a href="#"><img src="img/3.gif"></a>
+        <a href="#"><img src="img/4.png"></a>
+        <a href="#"><img src="img/5.gif"></a>
+        <a href="#"><img src="img/6.jpg"></a>
+        <a href="#"><img src="img/7.jpg"></a>
+        <a href="#"><img src="img/8.jpg"></a>
+        <a href="#"><img src="img/9.jpg"></a>
+</div>
+<div class="footer-bt">
+    <a class="member" href="javascript:;">中国花卉协会会员</a>
+    <a class="member" href="javascript:;">中国电子商务协会会员</a>
+    <a class="member" href="javascript:;">ICP经营许可证：</a>
+    <a class="member" href="javascript:;">粤B2-20050744</a>
+    <b>|</b>
+    <span> 粤公网安备44030502000373号 Copyright &copy; 2005-2017</span>
+</div>
+<div class="footer-bt">
+    <a class="member" href="javascript:;">www.hua.com</a>
+    <span>深圳市百易信息技术有限公司</span>
+</div>
+<div class="link">
+    <a href="#"><b>友链</b></a>
+    <a href="#">中华取名</a>
+    <a href="#">深圳房产网</a>
+    <a href="#">卷皮网</a>
+    <a href="#">腕表网</a>
+    <a href="#">宝贝婚团网</a>
+    <a href="#">苗木</a>
+    <a href="#">卡座一珠宝网</a>
+    <a href="#">钻石婚戒定制</a>
+    <a href="#">杂志</a>
+    <a href="#">中国青少年艺术教育网</a>
+    <a href="#">装修网</a>
+    <a href="#">淘狗网</a>
+    <a href="#">礼无忧网</a>
+    <a href="#">宠物狗</a>
+    <a href="#">基友网</a>
+    <a href="#">礼物网</a>
+    <a href="#">装修</a>
+    <a href="#">新三板</a>
+    <a href="#">商标注册</a>
+    <a href="#">眼镜店</a>
+</div>
+</body>
+</html>
+<script src="js/login.js"></script>
